@@ -74,7 +74,7 @@
 					break;
 				case "resume":
 				case "cv":
-					window.location.href="resume.xhtml";
+					window.location.href="resume.html";
 					break;
 				default:
 					terminal.error("Unknown command");
