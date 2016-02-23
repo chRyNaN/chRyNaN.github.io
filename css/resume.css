@@ -1,0 +1,85 @@
+#resume-container {
+	padding-top: 18px;
+	padding-bottom: 100px;
+}
+
+#date-container {
+	display: inline-block;
+	line-height: 82px;
+}
+
+.update-text {
+	display: inline-block;
+	line-height: 14px;
+	vertical-align: middle;
+	color: #FFFFFF;
+	font-size: 14px;
+	margin: 0.5em;
+}
+
+#word {
+	float: right;
+	font-size: 18px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #40B0F9;
+	border: none;
+	padding: 0.5em;
+	margin: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#word:hover {
+	background-color: #299BE6;
+}
+
+#download {
+	float: right;
+	font-size: 18px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #FF9421;
+	border: none;
+	padding: 0.5em;
+	margin: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#download:hover {
+	background-color: #F37B20;
+}
+
+.octicon-arrow-down {
+	font-size: 24px;
+}
+
+.footer-container {
+	position: fixed;
+	width: 100%;
+	right: 0;
+	bottom: 0;
+}
+
+@media only handheld, (max-width: 700px) {
+	.footer-container {
+		position: static;
+	}
+	
+	#resume-container {
+		padding-bottom: 18px;
+	}
+	
+	#resume {
+		width: 90%;
+		height: 50%:
+	}
+	
+	.ndfHFb-c4YZDc-cYSp0e-s2gQvd {
+		overflow: hidden !important;
+		height: 50% !important;
+	}
+	
+}
+
