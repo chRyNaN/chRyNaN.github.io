@@ -10,6 +10,13 @@
         <link href="media/code favicon.png" sizes="192x192" type="image/png" rel="icon"></link>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/home.css">
+        <style>
+            .box-shadow {
+                -webkit-box-shadow: 5px 5px 3px 0px rgba(49,54,64,1);
+                -moz-box-shadow: 5px 5px 3px 0px rgba(49,54,64,1);
+                box-shadow: 5px 5px 3px 0px rgba(49,54,64,1);
+            }
+        </style>
         <script src="//www.google-analytics.com/analytics.js" async=""></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -27,7 +34,7 @@
     	    <div class="container">
     	    	<div class="row">
     	    	    <div class="col-sm-12">
-    	    	        <div id="error-popup-container" class="center-block">
+    	    	        <div id="error-popup-container" class="center-block box-shadow">
                             <div id="error-popup-header" style="background-color: #E9E9E9; font-size: 18px; color: #474E5D; border-radius: 5px 5px 0px 0px; padding: 9px;">
                                 <span id="error-popup-first-4" class="ch">4</span>
                                 <span id="error-popup-0" class="ry">0</span>
@@ -35,10 +42,10 @@
                             </div>
                             <div id="error-popup-body" style="position: relative; background-color: #474E5D; min-height: 300px; color: ##F7F7F3; border-radius: 0px 0px 5px 5px;">
                                 <div>
-                                    <div style="display: inline-block; width: 24%;">
-                                        <img alt="Warning!" src="media/warning-128.png"></img>
+                                    <div style="display: inline-block; width: 24%; text-align: center; vertical-align: top;">
+                                        <img alt="Warning!" src="media/warning-128.png" style="padding-top: 18px;"></img>
                                     </div>
-                                    <div style="display: inline-block; width: 75%;">
+                                    <div style="display: inline-block; vertical-align: top;">
                                         <div id="error-content-container" style="text-align: center;">
                                             <h1 id="error-content-title" style="color: #F7F7F3; margin: 0 !important; padding-top: 18px;">Oops! We couldn't find it...</h1>
                                             <p id="error-content-text" style="color: #E1E1E1; margin: 0 !important; padding-top: 9px;">The page you were looking for doesn't exist.</p>
