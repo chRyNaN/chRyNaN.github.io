@@ -428,11 +428,13 @@
   				var email = document.getElementById("email").value;
   				var message = document.getElementById("message").value;
   				
-  				var obj = {"name": name, "email": email, "message": message};
+  				var obj = {"name": name, "_replyto": email, "message": message};
   				
   				$.ajax({
-  					url: "http://chrynan.elasticbeanstalk.com/rs/send/mail/" + JSON.stringify(obj),
+  					url: "//formspree.io/chrynan@gmail.com",
   					type: "POST",
+  					data: obj,
+  					dataType: "json",
   					success: function(){
   						console.log("sent email");
   						notify("Email", "Successfully Sent Message");
