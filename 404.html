@@ -137,7 +137,8 @@
     	</section>
     	<script>
     	    (function(){
-    	        $("#error-back-button").on("click", function(event){
+    	        $("#error-back-button").on("click", function(){
+    	           console.log("hit the back button");
     	           history.back(-1);
     	        });
     	    })();
