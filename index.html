@@ -430,6 +430,7 @@
   					$("#jam-icon").attr("src", "media/jam-wave.png");
   				});
   				$("#stack-overflow-link-container").on("click", function(event){
+  					event.stopPropagation();
   					$("#stack-overflow-link-container > a").click();	
   				});
   				$.ajax({
