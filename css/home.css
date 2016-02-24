@@ -991,7 +991,7 @@ button.submit:hover {
 }
 
 .fa-stack-overflow {
-	color: #E9E9E9;
-	font-size: 6em;
-	padding-top: 20.5px;
+	color: #E9E9E9 !important;
+	font-size: 6em !important;
+	padding-top: 20.5px !important;
 }
