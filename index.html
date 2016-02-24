@@ -267,7 +267,7 @@
 					<div class="inline">
 					        <p class="project-content"><span>Stack Overflow</span></p>
 					        <div class="octicon-container">
-					        	<div class="project-circle">
+					        	<div id="stack-overflow-link-container" class="project-circle">
 					        		<a href="http://stackoverflow.com/users/1478764/chrynan" title="Stack Overflow Profile"><span class="fa fa-2x fa-stack-overflow"></span></a>
 					        	</div>
 					        </div>
@@ -428,6 +428,9 @@
   				});
   				$("#jam-icon").on("mouseleave", function(event){
   					$("#jam-icon").attr("src", "media/jam-wave.png");
+  				});
+  				$("#stack-overflow-link-container").on("click", function(event){
+  					$("#stack-overflow-link-container > a").click();	
   				});
   			});
   			
