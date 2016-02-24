@@ -259,7 +259,7 @@
 				<div class="project-container">
 					<h4 id="project-header-container"><span class="project-header">See what I've been up to!</span></h4>
 					<div class="inline">
-						<p class="project-content"><span>Check out my public repositories on Github.</span></p>
+						<p class="project-content"><span>Github</span></p>
 						<div class="octicon-container">
 							<a href="https://github.com/chRyNaN" title="Github Projects"><span class="mega-octicon octicon-mark-github center-block github-icon"></span></a>
 						</div>
@@ -273,7 +273,7 @@
 					        </div>
 					</div>
 					<div class="inline">
-						<p class="project-content"><span>Check out one of my applications.</span></p>
+						<p class="project-content"><span>JamSession</span></p>
 						<div class="octicon-container">
 							<a href="https://jamsessionapp.com" title="JamSession"><img id="jam-icon" class="center-block github-icon" src="media/jam-wave.png"></img></a>
 						</div>
@@ -443,6 +443,7 @@
   								if(typeof(me.reputation) !== "undefined"){
   									var span = $(document.createElement("span"));
   									span.html(me.reputation);
+  									span.addClass("badge");
   									$("#stack-overflow-link-container > a").after(span);
   								}
   							}
