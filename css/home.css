@@ -1007,3 +1007,8 @@ button.submit:hover {
 	background-color: rgb(64, 176, 249) !important;
 	color: #FFFFFF !important;
 }
+
+.fb_iframe_widget{
+	display: block !important;
+	padding-top: 18px;
+}
