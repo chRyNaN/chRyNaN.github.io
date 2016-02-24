@@ -728,6 +728,7 @@ span, span::before, span::after {
 
 .octicon-container {
 	text-align: center;
+	min-width: 250px;
 }
 
 .octicon-container > a:hover,
