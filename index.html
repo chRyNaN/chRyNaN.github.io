@@ -427,12 +427,6 @@
   			
   			$(document).ready(function(){
   				charts();
-  				$("#jam-icon").on("mouseenter", function(event){
-  					$("#jam-icon").attr("src", "media/jam-wave-hover.png");
-  				});
-  				$("#jam-icon").on("mouseleave", function(event){
-  					$("#jam-icon").attr("src", "media/jam-wave.png");
-  				});
   				$("#stack-overflow-link-container").on("click", function(event){
   					event.stopPropagation();
   					$("#stack-overflow-link-container > a").click();	
