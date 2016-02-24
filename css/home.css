@@ -977,6 +977,7 @@ button.submit:hover {
 }
 
 .project-circle {
+	display: inline-block;
 	height: 125px;
 	width: 125px;
 	-moz-border-radius: 62.5px;
