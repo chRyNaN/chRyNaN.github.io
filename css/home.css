@@ -988,6 +988,7 @@ button.submit:hover {
 
 .project-circle:hover{
 	background-color: #41AF3D;
+	cursor: pointer;
 }
 
 .fa-stack-overflow {
