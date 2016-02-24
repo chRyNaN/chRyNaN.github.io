@@ -978,6 +978,7 @@ button.submit:hover {
 
 .project-circle {
 	display: inline-block;
+	position: relative;
 	height: 125px;
 	width: 125px;
 	-moz-border-radius: 62.5px;
@@ -996,4 +997,12 @@ button.submit:hover {
 	color: #E9E9E9 !important;
 	font-size: 6em !important;
 	padding-top: 20.5px !important;
+}
+
+.badge{
+	position: absolute !important;
+	right: 0 !important;
+	top: 5px !important;
+	background-color: rgb(64, 176, 249) !important;
+	color: #FFFFFF !important;
 }
