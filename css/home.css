@@ -975,3 +975,12 @@ button.submit:hover {
 	display: inline-block;
 	vertical-align: top;
 }
+
+.project-circle {
+	height: 125px;
+	width: 125px;
+	-moz-border-radius: 62.5px;
+	-webkit-border-radius: 62.5px;
+	border-radius: 62.5px;
+	background-color: #313640;
+}
