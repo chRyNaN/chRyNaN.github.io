@@ -983,4 +983,15 @@ button.submit:hover {
 	-webkit-border-radius: 62.5px;
 	border-radius: 62.5px;
 	background-color: #313640;
+	margin-top: 20px;
+}
+
+.project-circle:hover{
+	background-color: #41AF3D;
+}
+
+.fa-stack-overflow {
+	color: #E9E9E9;
+	font-size: 6em;
+	padding-top: 20.5px;
 }
