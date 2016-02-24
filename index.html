@@ -432,6 +432,23 @@
   				$("#stack-overflow-link-container").on("click", function(event){
   					$("#stack-overflow-link-container > a").click();	
   				});
+  				$.ajax({
+  					url: "https://api.stackexchange.com/2.2/users/1478764?order=desc&sort=reputation&site=stackoverflow",
+  					type: "GET",
+  					success: function(data){
+  						data = (typeof(data) === "string") ? JSON.parse(data) : data;
+  						if(typeof(data.items) !== "undefined"){
+  							if(data.items.length > 0){
+  								var me = data.items[0];
+  								if(typeof(me.reputation) !== "undefined"){
+  									var span = $(document.createElement("span"));
+  									span.html(me.reputation);
+  									$("#stack-overflow-link-container > a").after(span);
+  								}
+  							}
+  						}
+  					}
+  				});
   			});
   			
   			$(".blog-img").on("click", function(){
