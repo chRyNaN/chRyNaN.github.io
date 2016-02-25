@@ -72,13 +72,6 @@
 			</nav>
 		</header>
 		
-		<section class="stack-overflow-container">
-			<a id="stack-overflow-link" class="hide-link" href="http://stackoverflow.com/users/1478764/chrynan">
-				<img id="stack-overflow-image" class="hide-link" src="http://stackoverflow.com/users/flair/1478764.png?theme=dark" width="208" height="58"
-					 alt="profile for chRyNaN at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="Check out my StackOverflow profile."></img>
-			</a>
-		</section>
-		
 		<section id="about" class="section-two">
 			<div class="container">
 				<div class="row">
@@ -408,33 +401,12 @@
 				if ($(".nav li.active > a").text() == "Skills"){
 					charts();
 					scrollFrom = "skills";
-					hideStackOverflowLink();
 				}else if($(".nav li.active > a").text() == "Projects"){
 					scrollFrom = "projects";
-					showStackOverflowLink();
 				}else if(scrollFrom == "projects"){
 					scrollFrom = $(".nav li.active > a").text();
-					hideStackOverflowLink();
 				}
 			});
-  			
-  			function hideStackOverflowLink(){
-  				var link = document.getElementById("stack-overflow-link");
-				var image = document.getElementById("stack-overflow-image");
-				link.classList.remove("show-link");
-				image.classList.remove("show-link");
-				link.classList.add("hide-link");
-				image.classList.add("hide-link");
-  			}
-  			
-  			function showStackOverflowLink(){
-  				var link = document.getElementById("stack-overflow-link");
-				var image = document.getElementById("stack-overflow-image");
-				link.classList.remove("hide-link");
-				image.classList.remove("hide-link");
-				link.classList.add("show-link");
-				image.classList.add("show-link");
-  			}
   			
   			$(document).ready(function(){
   				charts();
