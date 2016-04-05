@@ -1066,3 +1066,25 @@ button.submit:hover {
 #request{
 	min-height: 0px !important;	
 }
+
+.m-btn{
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-moz-transition: -moz-box-shadow .25s;
+	-moz-transition: box-shadow .25s;
+	-webkit-transition: -webkit-box-shadow .25s;
+	-webkit-transition: box-shadow .25s;
+	transition: box-shadow .25s;
+}
+
+.m-btn:hover{
+	-moz-box-shadow: 0 2px 5px 0 #313640;
+	-webkit-box-shadow: 0 2px 5px 0 #313640;
+	box-shadow: 0 2px 5px 0 #313640;
+	-moz-transition: -moz-box-shadow .25s;
+	-moz-transition: box-shadow .25s;
+	-webkit-transition: -webkit-box-shadow .25s;
+	-webkit-transition: box-shadow .25s;
+	transition: box-shadow .25s;
+}
