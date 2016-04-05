@@ -1020,7 +1020,6 @@ button.submit:hover {
 .header{
 	display: inline-block;
 	margin: 0;
-	margin-top: 60px;
 	padding: 10px;
 	font-size: 24px;
 	-moz-border-radius: 5px;
@@ -1042,6 +1041,7 @@ button.submit:hover {
 	outline: none;
 	margin-top: 40px;
 	font-size: 16px;
+	padding: 10px;
 	-moz-border-radius: 40px;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
@@ -1060,4 +1060,8 @@ button.submit:hover {
 	-moz-transition: color .25s, background-color .25s;
 	-webkit-transition: color .25s, background-color .25s;
 	transition: color .25s, background-color .25s;
+}
+
+#request{
+	min-height: 0px !important;	
 }
