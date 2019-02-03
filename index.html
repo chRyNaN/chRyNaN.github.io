@@ -1,538 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>chRyNaN</title>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width = device-width, initial-scale = 1"/>
-		<meta name="author" content="chRyNaN"/>
-		<meta name="keywords" content="software engineer portfolio, software developer portfolio, software developer, software engineer, portfolio, site, chrynan, chryan"/>
-		<meta name="description" content="Christopher Keenan's software development portfolio."/>
-		<meta name="description" itemprop="Christopher Keenan's software development portfolio"/>
-		<meta name="theme-color" content="#313640"/>
-		<!-- Facebook Open Graph meta data -->
-		<meta property="og:url" content="http://chrynan.com/"/>
-		<meta property="og:site_name" content="chRyNaN"/>
-		<meta property="og:title" content="chRyNaN Portfolio"/>
-		<meta property="og:description" content="Software Developer"/>
-		<meta property="og:image" content="http://chrynan.com/media/chRyNaN_code.png"/>
-		<meta property="og:type" content="profile"/>
-		<!-- Facebook Open Graph meta data end -->
-		<link rel="icon" type="image/png" sizes="192x192" href="media/code favicon.png"/>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
-		<link rel="stylesheet" type="text/css" href="css/home.css"/>
-		<link rel="stylesheet" type="text/css" href="css/octicons/octicons.css"/>
-		<link rel="stylesheet" type="text/css" href="css/jquery.terminal.css"/>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  		<script>
-  			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <head>
+        <title>chRyNaN</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width = device-width, initial-scale = 1"/>
+        <meta name="author" content="chRyNaN"/>
+        <meta name="keywords"
+              content="software engineer portfolio, software developer portfolio, software developer, software engineer, portfolio, site, chrynan, chryan"/>
+        <meta name="description" content="Christopher Keenan's software development portfolio."/>
+        <meta name="description" itemprop="Christopher Keenan's software development portfolio"/>
+        <meta name="theme-color" content="#313640"/>
+        <!-- Facebook Open Graph meta data -->
+        <meta property="og:url" content="http://chrynan.com/"/>
+        <meta property="og:site_name" content="chRyNaN"/>
+        <meta property="og:title" content="chRyNaN Portfolio"/>
+        <meta property="og:description" content="Software Developer"/>
+        <meta property="og:image" content="http://chrynan.com/media/chRyNaN_code.png"/>
+        <meta property="og:type" content="profile"/>
+        <!-- Facebook Open Graph meta data end -->
+        <link rel="icon" type="image/png" sizes="192x192" href="media/code favicon.png"/>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/home.css"/>
+        <link rel="stylesheet" type="text/css" href="css/octicons/octicons.css"/>
+        <link rel="stylesheet" type="text/css" href="css/jquery.terminal.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  			ga('create', 'UA-58513815-1', 'auto');
-  			ga('send', 'pageview');
-		</script>
-	</head>
-	<body data-spy="scroll" data-target="#navbar-tab-container" data-offset="200">
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-  			var js, fjs = d.getElementsByTagName(s)[0];
-  			if (d.getElementById(id)) return;
-  			js = d.createElement(s); js.id = id;
-  			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  			fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));</script>
-		<header>
-			<nav id="navbar" class="navbar nabar-default navbar-fixed-top" role="navigation">
-				<div id="nav-container" class="container">
-					<div class="navbar-header">
-						<div id="home-button" class="navbar-left" title="Home">
-							<a class="navbar-brand" href="#" onclick="scrollToTop(); false;">
-								<span class="ch">ch</span><span class="ry">Ry</span><span class="nan">NaN</span>
-							</a>
-						</div>
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-							<span class="icon-bar" style="background-color: #FFFFFF"></span>	
-							<span class="icon-bar" style="background-color: #FFFFFF"></span>
-							<span class="icon-bar" style="background-color: #FFFFFF"></span>					
-						</button>
-					</div>
-					<div id="navbar-tab-container" class="collapse navbar-collapse navbar-responsive-collapse">
-						<ul id="navbar-tabs" class="nav nav-tabs navbar-nav navbar-right" role="tablist">
-							<li class="tabs"><a href="#about">About</a></li>
-							<li class="tabs"><a href="#skills">Skills</a></li>
-							<li class="tabs"><a href="#projects">Projects</a></li>
-							<li class="tabs"><a href="#blog">Blog</a></li>
-							<li class="tabs"><a href="#contact">Contact</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
-		
-		<section id="about" class="section-two">
-			<div class="container">
-				<div class="row">
-				<div class="col-sm-12">
-					<div>
-						<div class="flex-parent">
-							<div class="name-header fade-in">
-								<p><span class="ch">ch</span><span>ristopher</span></p>
-								<p><span class="ry"> Ry</span><span>an</span></p>
-								<p><span> Kee</span><span class="nan">NaN</span><span>.</span></p>
-							</div>
-						</div>
-						<div class="flex-parent">
-							<p><span class="dsc fade-in-delay">Software engineer specializing in Android development.</span></p>
-						</div>
-					</div>
-					<div class="row" style="display: none">
-						<div id="cmd-container" class="hidden-xs hidden-sm center-block">
-							<div id="cmd-header"><span>Command Prompt - About Me</span></div>
-							<div id="cmd"></div>
-						</div>
-					</div>
-					<div class="row" style="display:none">
-						<div class="always-flex-parent">
-							<h4 class="timeline-header">Timeline</h4>
-						</div>
-						<div class="timeline">
-							<div class="timeline-bar"></div>
-							<div class="timeline-block">
-								<div class="timeline-point">
-									<span class="timeline-date">1991</span>
-								</div>
-								<div class="timeline-content">
-									<div class="timeline-arrow"></div>
-									<h3>Birth</h3>
-									<p>I was born!</p>
-								</div>
-							</div>
-							<div class="timeline-block">
-								<div class="timeline-point">
-									<span class="timeline-date" style="right: 85%;">1998</span>
-								</div>
-								<div class="timeline-content">
-									<div class="timeline-arrow"></div>
-									<h3>Interest</h3>
-									<p>Received my first guitar and started playing shortly after.</p>
-								</div>
-							</div>
-							<div class="timeline-block">
-								<div class="timeline-point">
-									<span class="timeline-date">1999</span>
-								</div>
-								<div class="timeline-content">
-									<div class="timeline-arrow"></div>
-									<h3>Interest</h3>
-									<p>Assembled my first computer from spare parts. 
-										First look at the different computer parts and their purpose.</p>
-								</div>
-							</div>
-							<div class="timeline-block">
-								<div class="timeline-point">
-									<span class="timeline-date" style="right: 85%;">2007</span>
-								</div>
-								<div class="timeline-content">
-									<div class="timeline-arrow"></div>
-									<h3>School</h3>
-									<p>Took my first two programming courses. Learned Visual Basic.</p>
-								</div>
-							</div>
-							<div class="timeline-block">
-								<div class="timeline-point">
-									<span class="timeline-date">2009 - 2012</span>
-								</div>
-								<div class="timeline-content">
-									<div class="timeline-arrow"></div>
-									<h3>College</h3>
-									<p>Studied Computer Science and Computer Engineering at 
-										New York Institute of Technology for three years. Learned Java.
-									</p>
-								</div>
-							</div>
-							<div class="timeline-block">
-								<div class="timeline-point">
-									<span class="timeline-date" style="right: 208%;">Summer 2012</span>
-								</div>
-								<div class="timeline-content">
-									<div class="timeline-arrow"></div>
-									<h3>Internship</h3>
-									<p>Software Engineer intern at Mindray NA, a medical electronic manufacturer.</p>
-								</div>
-							</div>
-							<div class="timeline-block">
-								<div class="timeline-point">
-									<span class="timeline-date">2013</span>
-								</div>
-								<div class="timeline-content">
-									<div class="timeline-arrow"></div>
-									<h3>Experience</h3>
-									<p>Learned and implemented the Android API's.</p>
-								</div>
-							</div>
-							<div class="timeline-block">
-								<div class="timeline-point">
-									<span class="timeline-date" style="right: 215%;">2013 - Present</span>
-								</div>
-								<div class="timeline-content">
-									<div class="timeline-arrow"></div>
-									<h3>Work</h3>
-									<p>Started my own software development company, AppCrazy. Released numerous applications
-										with thousands of downloads to the Google Play Store.</p>
-								</div>
-							</div>
-							<div class="timeline-block">
-								<div class="timeline-point">
-									<span class="timeline-date">2014</span>
-								</div>
-								<div class="timeline-content">
-									<div class="timeline-arrow"></div>
-									<h3>Experience</h3>
-									<p>Learned server-side development with Java EE 7.</p>
-								</div>
-							</div>
-							<div class="timeline-block">
-								<div class="timeline-point">
-									<span class="timeline-date" style="right: 85%;">2014</span>
-								</div>
-								<div class="timeline-content">
-									<div class="timeline-arrow"></div>
-									<h3>Experience</h3>
-									<p>Learned client-side development with JavaScript. Became familiar with HTML5 API's.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="skills" class="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-4" style="width:25%">
-						<div class="canvas-container">
-							<canvas id="android-chart" class="donut-chart"></canvas>
-							<h4><span class="skill-header">Android</span></h4>
-						</div>
-					</div>
-					<div class="col-sm-4" style="width:25%">
-						<div class="canvas-container">
-							<canvas id="kotlin-chart" class="donut-chart"></canvas>
-							<h4><span class="skill-header">Kotlin</span></h4>
-						</div>
-					</div>
-					<div class="col-sm-4" style="width:25%">
-						<div class="canvas-container">
-							<canvas id="java-chart" class="donut-chart"></canvas>
-							<h4><span class="skill-header">Java/</span></h4>
-						</div>
-					</div>
-					<div class="col-sm-4" style="width:25%">
-						<div class="canvas-container">
-							<canvas id="javascript-chart" class="donut-chart"></canvas>
-							<h4><span class="skill-header">JavaScript</span></h4>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-4" style="width:25%">
-						<div class="detail-container">
-							<h4><span class="mega-octicon octicon-code"></span></h4>
-							<h4><span class="skill-header">Languages</span></h4>
-							<p class="detail">Kotlin, Java, Java EE 7, JavaScript, HTML, XHTML, CSS</p>
-						</div>
-					</div>
-					<div class="col-sm-4" style="width:25%">
-						<div class="detail-container">
-							<h4><span class="mega-octicon octicon-database"></span></h4>
-							<h4><span class="skill-header">Tools</span></h4>
-							<p class="detail">Android Studio, IntelliJ, Github</p>
-						</div>
-					</div>
-					<div class="col-sm-4" style="width:25%">
-						<div class="detail-container">
-							<h4><span class="mega-octicon octicon-eye"></span></h4>
-							<h4><span class="skill-header">Frameworks and Libraries</span></h4>
-							<p class="detail">Android, RxJava, Dagger, Google Play Services</p>
-						</div>
-					</div>
-					<div class="col-sm-4" style="width:25%">
-						<div class="detail-container">
-							<h4><span class="mega-octicon octicon-eye"></span></h4>
-							<h4><span class="skill-header">Design Patterns</span></h4>
-							<p class="detail">MVP, Clean Architecture</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="projects" class="section-two">
-			<div class="container">
-				<div class="project-container">
-					<h4 id="project-header-container"><span class="project-header">See what I've been up to!</span></h4>
-					<div class="inline">
-						<p class="project-content"><span>Github</span></p>
-						<div class="octicon-container">
-							<a href="https://github.com/chRyNaN" title="Github Projects"><span class="mega-octicon octicon-mark-github center-block github-icon"></span></a>
-						</div>
-					</div>
-					<div class="inline">
-					        <p class="project-content"><span>Stack Overflow</span></p>
-					        <div class="octicon-container">
-					        	<div id="stack-overflow-link-container" class="project-circle">
-					        		<a href="http://stackoverflow.com/users/1478764/chrynan" title="Stack Overflow Profile"><span class="fa fa-2x fa-stack-overflow"></span></a>
-					        	</div>
-					        </div>
-					</div>
-					<div class="inline">
-						<p class="project-content"><span>Guitar Tuner</span></p>
-						<div class="octicon-container">
-							<div class="project-circle">
-								<a href="https://github.com/chRyNaN/Android-Guitar-Tuner" title="Guitar Tuner">
-									<img id="guitar-icon" class="center-block github-icon" style="width: 125px;" src="media/guitar-tuner-peg.png"/>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</section>
-		
-		<section id="blog" class="section">
-			<div class="container blog-container">
-				<div class="row">
-					<div class="col-sm-5 blog-content">
-						<h4><span class="blog-header">Read up on my latest Blogs!</span></h4>
-						<p class="blog">My blog is where I express my engineering experiences and knowledge. Ranging anywhere from algorithm analysis
-					 and computational theory to API usage. <br /><br />Have a <a href="http://blog.chrynan.com" title="Blog">read for yourself</a> and let
-					  me know what you think!</p>
-					</div>
-					<div class="col-sm-7 blog-img">
-						<img src="media/blog-browser.svg" class="img-responsive" alt="" title="View My Blog!"/>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<section id="contact" class="section-two">
-			<div class="container">
-				<div>	
-					<form id="form">
-						<p class="contact">
-							<span class="sub-contact">Get in contact with me using the form below. It'd be great to hear from you!</span>
-						</p>
-						<input type="text" id="name" placeholder="Name" required="required"/>
-						<input type="email" id="email" placeholder="Email" required="required"/>
-						<textarea id="message" class="message" placeholder="Message" required="required"></textarea>
-						<button id="submit" class="submit center-block m-btn" type="submit" title="Submit form.">Submit <span class="fa fa-paper-plane"></span></button>
-					</form>
-				</div>
-			</div>
-		</section>
-		
-		<section id="request" class="section" style="display:none">
-			<div class="container">
-				<div class="header-container">
-					<h4 class="header header-green">Request assistance from chRyNaN; One of the worlds top developers.
-						<span title="Based on statistics from StackOverflow; The worlds most popular programming Q & A forum." class="asterick">*</span>
-					</h4>
-				</div>
-				<div class="request-btn-container">
-					<a class="btn default-btn request-btn m-btn" href="https://hackhands.com/chrynan/" title="Request expert on HackHands.">REQUEST EXPERT</a>
-				</div>
-			</div>
-		</section>
-		
-		<footer class="footer-container">
-			<div class="container">
-				<div class="row media footer">
-					<div id="copyright-container" class="col-sm-9 col-md-9 col-lg-9">
-						<a id="copyright" href="#">© Copyright 2014 - Christopher Keenan</a>
-						<div class="fb-like" data-href="http://chrynan.com/" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
-					</div>
-					<div id="up-container" class="col-sm-3 col-md-3 col-lg-3 media-right">
-						<a id="up-button" href="#" onclick="scrollToTop(); false;" title="Go To Top">
-							<span class="glyphicon glyphicon-chevron-up up-graphic"></span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-		
-		<script src="js/Chart.js"></script>
-		<script src="js/jquery.terminal-0.8.8.min.js"></script>
-		<script src="js/cmd.js"></script>
-		<script src="js/home.js"></script>
-  		<script>
-  			var scrollFrom;
-  			
-  			function scrollToTop(){
-  				$("html, body").animate({scrollTop: "0px"});
-  			}
-  			
-  			function charts(){
-  				var javaCtx = document.getElementById("java-chart").getContext("2d");
-  				var javaScriptCtx = document.getElementById("javascript-chart").getContext("2d");
-  				var androidCtx = document.getElementById("android-chart").getContext("2d");
-				var kotlinCtx = document.getElementById("kotlin-chart").getContext("2d");
-  				
-				var androidDonut = new Chart(androidCtx).Doughnut([{
-  					value: 95,
-					color: "#40B0F9", 
-  					highlight: "#40B0F9", 
-  					label: "Android"}, {
-  						value: 10,
-  						color: "#F7F7F3"
-  					}], {
-  						segmentShowStroke: false,
-  						animateScale: true,
-  						showTooltips: false,
-  						responsive: true
-  				});
-				
-				var kotlinDonut = new Chart(kotlinCtx).Doughnut([{
-  					value: 90,
-					color: "#FF9421",
-  					highlight: "#FF9421",
-  					label: "Android"}, {
-  						value: 10,
-  						color: "#F7F7F3"
-  					}], {
-  						segmentShowStroke: false,
-  						animateScale: true,
-  						showTooltips: false,
-  						responsive: true
-  				});
-				
-  				var javaDonut = new Chart(javaCtx).Doughnut([{
-  					value: 95, 
-  					color: "#41AF3D",
-  					highlight: "#41AF3D",
-  					label: "Java/Java EE 7"}, {
-  						value: 10,
-  						color: "#F7F7F3"
-  					}], {
-  						segmentShowStroke: false,
-  						animateScale: true,
-  						showTooltips: false,
-  						responsive: true
-  				});
-  				
-  				var javaScriptDonut = new Chart(javaScriptCtx).Doughnut([{
-  					value: 75,
-  					color: "#40B0F9", 
-  					highlight: "#40B0F9", 
-  					label: "JavaScript"}, {
-  						value: 15,
-  						color: "#F7F7F3"
-  					}], {
-  						segmentShowStroke: false,
-  						animateScale: true,
-  						showTooltips: false,
-  						responsive: true
-  				});
-  			}
-  			
-  			$('[data-spy="scroll"]').on("activate.bs.scrollspy", function(){
-				if ($(".nav li.active > a").text() == "Skills"){
-					charts();
-					scrollFrom = "skills";
-				}else if($(".nav li.active > a").text() == "Projects"){
-					scrollFrom = "projects";
-				}else if(scrollFrom == "projects"){
-					scrollFrom = $(".nav li.active > a").text();
-				}
-			});
-  			
-  			$(document).ready(function(){
-  				charts();
-  				$("#stack-overflow-link-container").on("click", function(event){
-  					event.stopPropagation();
-  					$("#stack-overflow-link-container > a").click();	
-  				});
-  				$.ajax({
-  					url: "https://api.stackexchange.com/2.2/users/1478764?order=desc&sort=reputation&site=stackoverflow",
-  					type: "GET",
-  					success: function(data){
-  						data = (typeof(data) === "string") ? JSON.parse(data) : data;
-  						if(typeof(data.items) !== "undefined"){
-  							if(data.items.length > 0){
-  								var me = data.items[0];
-  								if(typeof(me.reputation) !== "undefined"){
-  									var span = $(document.createElement("span"));
-  									span.html(me.reputation);
-  									span.addClass("badge");
-  									$("#stack-overflow-link-container > a").after(span);
-  								}
-  							}
-  						}
-  					}
-  				});
-  			});
-  			
-  			$(".blog-img").on("click", function(){
-  				window.location.href = "http://blog.chrynan.com";
-  			});
-  			
-  			$("#form").submit(function(){
-  				sendMessage();
-  				return false;
-  			});
-  			
-  			function sendMessage(){
-  				var name = document.getElementById("name").value;
-  				var email = document.getElementById("email").value;
-  				var message = document.getElementById("message").value;
-  				
-  				var obj = {"name": name, "_replyto": email, "message": message};
-  				
-  				$.ajax({
-  					url: "//formspree.io/chrynan@gmail.com",
-  					type: "POST",
-  					data: obj,
-  					dataType: "json",
-  					success: function(){
-  						console.log("sent email");
-  						notify("Email", "Successfully Sent Message");
-  						clearForm();
-  					},
-  					error: function(jqXHR, textStatus, errorThrown){
-  						console.error("Error sending email: " + textStatus + " " + errorThrown);
-  						notify("Email", "Error Send Message");
-  						clearForm();
-  					}
-  				});
-  				return false;
-  			}
-  			
-  			function notify(title, message){
-  				if (!("Notification" in window)) {
-  			    	console.log("Browser doesn't support notifications.");
-  			    	alert(message);
-  			  	}else if (Notification.permission === "granted") {
-  			    	var notification = new Notification(title, {body: message});
-  			  	}else if (Notification.permission !== 'denied') {
-  			    	Notification.requestPermission(function (permission) {
-  			      		if (permission === "granted") {
-  			      			var notification = new Notification(title, {body: message});
-  			      		}
-  			    	});
-  			  	}
-  			}
-  			
-  			function clearForm(){
-  				document.getElementById("name").value = "";
-  				document.getElementById("email").value = "";
-  				document.getElementById("message").value = "";
-  			}
-  			
-  		</script>
-	</body>
+            ga('create', 'UA-58513815-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </head>
+    <body data-spy="scroll" data-target="#navbar-tab-container" data-offset="200">
+        <header>
+            <nav id="navbar" class="navbar nabar-default navbar-fixed-top" role="navigation">
+                <div id="nav-container" class="container">
+                    <div class="navbar-header">
+                        <div id="home-button" class="navbar-left" title="Home">
+                            <a class="navbar-brand" href="#" onclick="scrollToTop(); false;">
+                                <span class="ch">ch</span><span class="ry">Ry</span><span class="nan">NaN</span>
+                            </a>
+                        </div>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-responsive-collapse">
+                            <span class="icon-bar" style="background-color: #FFFFFF"></span>
+                            <span class="icon-bar" style="background-color: #FFFFFF"></span>
+                            <span class="icon-bar" style="background-color: #FFFFFF"></span>
+                        </button>
+                    </div>
+                    <div id="navbar-tab-container" class="collapse navbar-collapse navbar-responsive-collapse">
+                        <ul id="navbar-tabs" class="nav nav-tabs navbar-nav navbar-right" role="tablist">
+                            <li class="tabs"><a href="#about">About</a></li>
+                            <li class="tabs"><a href="#skills">Skills</a></li>
+                            <li class="tabs"><a href="#projects">Projects</a></li>
+                            <li class="tabs"><a href="#blog">Blog</a></li>
+                            <li class="tabs"><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section id="about" class="section-two accent-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div>
+                            <div class="flex-parent">
+                                <div class="name-header">
+                                    <p><span class="ch">ch</span><span class="name">ristopher</span></p>
+                                    <p><span class="ry"> Ry</span><span class="name">an</span></p>
+                                    <p><span class="name"> Kee</span><span class="nan">NaN</span></p>
+                                    <p><span class="codes">Codes</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section-two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4" style="width:25%">
+                        <div class="canvas-container">
+                            <canvas id="android-chart" class="donut-chart"></canvas>
+                            <h4><span class="skill-header">Android</span></h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="width:25%">
+                        <div class="canvas-container">
+                            <canvas id="kotlin-chart" class="donut-chart"></canvas>
+                            <h4><span class="skill-header">Kotlin</span></h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="width:25%">
+                        <div class="canvas-container">
+                            <canvas id="java-chart" class="donut-chart"></canvas>
+                            <h4><span class="skill-header">Java</span></h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="width:25%">
+                        <div class="canvas-container">
+                            <canvas id="javascript-chart" class="donut-chart"></canvas>
+                            <h4><span class="skill-header">JavaScript</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4" style="width:25%">
+                        <div class="detail-container">
+                            <h4><span class="mega-octicon octicon-code"></span></h4>
+                            <h4><span class="skill-header">Languages</span></h4>
+                            <p class="detail">Kotlin, Java, Java EE 7, JavaScript, HTML, XHTML, CSS</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="width:25%">
+                        <div class="detail-container">
+                            <h4><span class="mega-octicon octicon-database"></span></h4>
+                            <h4><span class="skill-header">Tools</span></h4>
+                            <p class="detail">Android Studio, IntelliJ, Github</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="width:25%">
+                        <div class="detail-container">
+                            <h4><span class="mega-octicon octicon-eye"></span></h4>
+                            <h4><span class="skill-header">Frameworks and Libraries</span></h4>
+                            <p class="detail">Android, RxJava, Dagger, Google Play Services</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4" style="width:25%">
+                        <div class="detail-container">
+                            <h4><span class="mega-octicon octicon-eye"></span></h4>
+                            <h4><span class="skill-header">Design Patterns</span></h4>
+                            <p class="detail">MVP, Clean Architecture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="project-container">
+                    <h4 id="project-header-container"><span class="project-header">See what I've been up to!</span></h4>
+                    <div class="inline">
+                        <p class="project-content"><span>Github</span></p>
+                        <div class="octicon-container">
+                            <a href="https://github.com/chRyNaN" title="Github Projects"><span
+                                    class="mega-octicon octicon-mark-github center-block github-icon"></span></a>
+                        </div>
+                    </div>
+                    <div class="inline">
+                        <p class="project-content"><span>Stack Overflow</span></p>
+                        <div class="octicon-container">
+                            <div id="stack-overflow-link-container" class="project-circle">
+                                <a href="http://stackoverflow.com/users/1478764/chrynan" title="Stack Overflow Profile"><span
+                                        class="fa fa-2x fa-stack-overflow"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inline">
+                        <p class="project-content"><span>Guitar Tuner</span></p>
+                        <div class="octicon-container">
+                            <div class="project-circle">
+                                <a href="https://github.com/chRyNaN/Android-Guitar-Tuner" title="Guitar Tuner">
+                                    <img id="guitar-icon" class="center-block github-icon" style="width: 125px;"
+                                         src="media/guitar-tuner-peg.png"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="section-two">
+            <div class="container">
+                <div>
+                    <form id="form">
+                        <p class="contact">
+                            <span class="sub-contact">Get in contact with me using the form below. It'd be great to hear from you!</span>
+                        </p>
+                        <input type="text" id="name" placeholder="Name" required="required"/>
+                        <input type="email" id="email" placeholder="Email" required="required"/>
+                        <textarea id="message" class="message" placeholder="Message" required="required"></textarea>
+                        <button id="submit" class="submit center-block m-btn" type="submit" title="Submit form.">Submit <span
+                                class="fa fa-paper-plane"></span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-container">
+            <div class="container">
+                <div class="row media footer">
+                    <div id="copyright-container" class="col-sm-12 col-md-12 col-lg-12">
+                        <p id="copyright">© Copyright 2019 - chRyNaN</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/Chart.js"></script>
+        <script src="js/jquery.terminal-0.8.8.min.js"></script>
+        <script src="js/cmd.js"></script>
+        <script src="js/home.js"></script>
+        <script>
+            var scrollFrom;
+
+            function scrollToTop() {
+                $("html, body").animate({scrollTop: "0px"});
+            }
+
+            function charts() {
+                var javaCtx = document.getElementById("java-chart").getContext("2d");
+                var javaScriptCtx = document.getElementById("javascript-chart").getContext("2d");
+                var androidCtx = document.getElementById("android-chart").getContext("2d");
+                var kotlinCtx = document.getElementById("kotlin-chart").getContext("2d");
+
+                var androidDonut = new Chart(androidCtx).Doughnut([{
+                    value: 95,
+                    color: "#40B0F9",
+                    highlight: "#40B0F9",
+                    label: "Android"
+                }, {
+                    value: 10,
+                    color: "#F7F7F3"
+                }], {
+                    segmentShowStroke: false,
+                    animateScale: true,
+                    showTooltips: false,
+                    responsive: true
+                });
+
+                var kotlinDonut = new Chart(kotlinCtx).Doughnut([{
+                    value: 90,
+                    color: "#FF9421",
+                    highlight: "#FF9421",
+                    label: "Android"
+                }, {
+                    value: 10,
+                    color: "#F7F7F3"
+                }], {
+                    segmentShowStroke: false,
+                    animateScale: true,
+                    showTooltips: false,
+                    responsive: true
+                });
+
+                var javaDonut = new Chart(javaCtx).Doughnut([{
+                    value: 95,
+                    color: "#41AF3D",
+                    highlight: "#41AF3D",
+                    label: "Java/Java EE 7"
+                }, {
+                    value: 10,
+                    color: "#F7F7F3"
+                }], {
+                    segmentShowStroke: false,
+                    animateScale: true,
+                    showTooltips: false,
+                    responsive: true
+                });
+
+                var javaScriptDonut = new Chart(javaScriptCtx).Doughnut([{
+                    value: 75,
+                    color: "#40B0F9",
+                    highlight: "#40B0F9",
+                    label: "JavaScript"
+                }, {
+                    value: 15,
+                    color: "#F7F7F3"
+                }], {
+                    segmentShowStroke: false,
+                    animateScale: true,
+                    showTooltips: false,
+                    responsive: true
+                });
+            }
+
+            $('[data-spy="scroll"]').on("activate.bs.scrollspy", function () {
+                if ($(".nav li.active > a").text() == "Skills") {
+                    charts();
+                    scrollFrom = "skills";
+                } else if ($(".nav li.active > a").text() == "Projects") {
+                    scrollFrom = "projects";
+                } else if (scrollFrom == "projects") {
+                    scrollFrom = $(".nav li.active > a").text();
+                }
+            });
+
+            $(document).ready(function () {
+                charts();
+                $("#stack-overflow-link-container").on("click", function (event) {
+                    event.stopPropagation();
+                    $("#stack-overflow-link-container > a").click();
+                });
+                $.ajax({
+                    url: "https://api.stackexchange.com/2.2/users/1478764?order=desc&sort=reputation&site=stackoverflow",
+                    type: "GET",
+                    success: function (data) {
+                        data = (typeof (data) === "string") ? JSON.parse(data) : data;
+                        if (typeof (data.items) !== "undefined") {
+                            if (data.items.length > 0) {
+                                var me = data.items[0];
+                                if (typeof (me.reputation) !== "undefined") {
+                                    var span = $(document.createElement("span"));
+                                    span.html(me.reputation);
+                                    span.addClass("badge");
+                                    $("#stack-overflow-link-container > a").after(span);
+                                }
+                            }
+                        }
+                    }
+                });
+            });
+
+            $(".blog-img").on("click", function () {
+                window.location.href = "http://blog.chrynan.com";
+            });
+
+            $("#form").submit(function () {
+                sendMessage();
+                return false;
+            });
+
+            function sendMessage() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var message = document.getElementById("message").value;
+
+                var obj = {"name": name, "_replyto": email, "message": message};
+
+                $.ajax({
+                    url: "//formspree.io/chrynan@gmail.com",
+                    type: "POST",
+                    data: obj,
+                    dataType: "json",
+                    success: function () {
+                        console.log("sent email");
+                        notify("Email", "Successfully Sent Message");
+                        clearForm();
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.error("Error sending email: " + textStatus + " " + errorThrown);
+                        notify("Email", "Error Send Message");
+                        clearForm();
+                    }
+                });
+                return false;
+            }
+
+            function notify(title, message) {
+                if (!("Notification" in window)) {
+                    console.log("Browser doesn't support notifications.");
+                    alert(message);
+                } else if (Notification.permission === "granted") {
+                    var notification = new Notification(title, {body: message});
+                } else if (Notification.permission !== 'denied') {
+                    Notification.requestPermission(function (permission) {
+                        if (permission === "granted") {
+                            var notification = new Notification(title, {body: message});
+                        }
+                    });
+                }
+            }
+
+            function clearForm() {
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("message").value = "";
+            }
+        </script>
+    </body>
 </html>
