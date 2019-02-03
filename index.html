@@ -32,7 +32,7 @@
                 <div id="nav-container" class="container">
                     <div class="navbar-header">
                         <div id="home-button" class="navbar-left" title="Home">
-                            <a class="navbar-brand" href="#" onclick="scrollToTop(); false;">
+                            <a class="navbar-brand" href="#" onclick="scrollToTop(); return false;">
                                 <span class="ch">ch</span><span class="ry">Ry</span><span class="nan">NaN</span>
                             </a>
                         </div>
@@ -48,7 +48,6 @@
                             <li class="tabs"><a href="#about">About</a></li>
                             <li class="tabs"><a href="#skills">Skills</a></li>
                             <li class="tabs"><a href="#projects">Projects</a></li>
-                            <li class="tabs"><a href="#blog">Blog</a></li>
                             <li class="tabs"><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -168,7 +167,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -302,7 +300,7 @@
                                 var me = data.items[0];
                                 if (typeof (me.reputation) !== "undefined") {
                                     var span = $(document.createElement("span"));
-                                    span.html(me.reputation);
+                                    span.html(me.reputation.toLocaleString());
                                     span.addClass("badge");
                                     $("#stack-overflow-link-container > a").after(span);
                                 }
