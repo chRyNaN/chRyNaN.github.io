@@ -75,16 +75,28 @@ span, span::before, span::after {
 	display: ms-flex !important;
 }
 
-.ch {
+.colorOne {
 	color: #40B0F9 !important;
 }
 
-.ry {
+.colorTwo {
 	color: #FF9421 !important;
 }
 
-.nan {
+.colorThree {
 	color: #41AF3D !important;
+}
+
+.ch {
+	color: #FFFFFF !important;
+}
+
+.ry {
+	color: #FFFFFF !important;
+}
+
+.nan {
+	color: #FFFFFF !important;
 }
 
 .section {
