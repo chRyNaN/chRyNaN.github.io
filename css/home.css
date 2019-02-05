@@ -22,6 +22,7 @@ span, span::before, span::after {
     font-size: 28px !important;
     line-height: 28px !important;
     vertical-align: middle !important;
+    outline: none !important;
 }
 
 .nav-tabs {
@@ -46,8 +47,10 @@ span, span::before, span::after {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    color: #C7BAAD !important;
+    color: #40B0F9 !important;
     transition: color 0.25s linear;
+    border: none !important;
+    outline: none !important;
 }
 
 .nav-tabs > li.active > a,
@@ -234,7 +237,7 @@ span, span::before, span::after {
     font-size: 28px;
 }
 
-.codes{
+.codes {
     font-size: 28px !important;
     color: #FFFFFF;
 }
