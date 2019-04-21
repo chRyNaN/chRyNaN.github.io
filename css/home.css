@@ -105,6 +105,11 @@ span, span::before, span::after {
     font-size: 28px !important;
 }
 
+.description {
+    color: #313640 !important;
+    margin-top: 20px !important;
+}
+
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -233,7 +238,7 @@ span, span::before, span::after {
 }
 
 .name {
-    color: #474E5D;
+    color: #313640;
     font-size: 28px;
 }
 
