@@ -873,7 +873,7 @@ span, span::before, span::after {
     margin-top: 20px;
 }
 
-.skills-container {
+#skills-header-container {
     display: inline-block;
     background-color: #41AF3D;
     color: #FFFFFF;
