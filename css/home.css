@@ -874,6 +874,13 @@ span, span::before, span::after {
 }
 
 #skills-header-container {
+    margin-top: 0;
+    margin-bottom: 40px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.skills-header {
     display: inline-block;
     background-color: #41AF3D;
     color: #FFFFFF;
@@ -987,7 +994,6 @@ p.blog {
     margin-bottom: 40px;
     vertical-align: middle;
     text-align: center;
-
 }
 
 .sub-contact {
