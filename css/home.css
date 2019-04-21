@@ -801,6 +801,7 @@ span, span::before, span::after {
 
 .detail-container {
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .detail {
