@@ -873,6 +873,17 @@ span, span::before, span::after {
     margin-top: 20px;
 }
 
+.skills-container {
+    display: inline-block;
+    background-color: #41AF3D;
+    color: #FFFFFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 10px;
+    font-size: 24px;
+}
+
 .blog-container {
 
 }
