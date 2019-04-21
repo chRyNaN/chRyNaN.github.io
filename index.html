@@ -77,58 +77,45 @@
         <section id="skills" class="section-two">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4" style="width:25%">
+                    <div class="col-sm-4" style="width:33%">
                         <div class="canvas-container">
                             <canvas id="android-chart" class="donut-chart"></canvas>
                             <h4><span class="skill-header">Android</span></h4>
                         </div>
                     </div>
-                    <div class="col-sm-4" style="width:25%">
+                    <div class="col-sm-4" style="width:33%">
                         <div class="canvas-container">
                             <canvas id="kotlin-chart" class="donut-chart"></canvas>
                             <h4><span class="skill-header">Kotlin</span></h4>
                         </div>
                     </div>
-                    <div class="col-sm-4" style="width:25%">
+                    <div class="col-sm-4" style="width:33%">
                         <div class="canvas-container">
                             <canvas id="java-chart" class="donut-chart"></canvas>
                             <h4><span class="skill-header">Java</span></h4>
                         </div>
                     </div>
-                    <div class="col-sm-4" style="width:25%">
-                        <div class="canvas-container">
-                            <canvas id="javascript-chart" class="donut-chart"></canvas>
-                            <h4><span class="skill-header">JavaScript</span></h4>
-                        </div>
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4" style="width:25%">
+                    <div class="col-sm-4" style="width:33%">
                         <div class="detail-container">
                             <h4><span class="mega-octicon octicon-code"></span></h4>
-                            <h4><span class="skill-header">Languages</span></h4>
-                            <p class="detail">Kotlin, Java, Java EE 7, JavaScript, HTML, XHTML, CSS</p>
+                            <h4><span class="skill-header">Code</span></h4>
+                            <p class="detail">Kotlin, Java, Android</p>
                         </div>
                     </div>
-                    <div class="col-sm-4" style="width:25%">
+                    <div class="col-sm-4" style="width:33%">
                         <div class="detail-container">
                             <h4><span class="mega-octicon octicon-database"></span></h4>
                             <h4><span class="skill-header">Tools</span></h4>
-                            <p class="detail">Android Studio, IntelliJ, Github</p>
+                            <p class="detail">Android Studio, IntelliJ, Git</p>
                         </div>
                     </div>
-                    <div class="col-sm-4" style="width:25%">
+                    <div class="col-sm-4" style="width:33%">
                         <div class="detail-container">
                             <h4><span class="mega-octicon octicon-eye"></span></h4>
-                            <h4><span class="skill-header">Frameworks and Libraries</span></h4>
-                            <p class="detail">Android, RxJava, Dagger, Google Play Services</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4" style="width:25%">
-                        <div class="detail-container">
-                            <h4><span class="mega-octicon octicon-eye"></span></h4>
-                            <h4><span class="skill-header">Design Patterns</span></h4>
-                            <p class="detail">MVP, Clean Architecture</p>
+                            <h4><span class="skill-header">Design</span></h4>
+                            <p class="detail">Clean Architecture, Kotlin Multiplatform, MVP</p>
                         </div>
                     </div>
                 </div>
@@ -213,7 +200,7 @@
                 var kotlinCtx = document.getElementById("kotlin-chart").getContext("2d");
 
                 var androidDonut = new Chart(androidCtx).Doughnut([{
-                    value: 95,
+                    value: 100,
                     color: "#40B0F9",
                     highlight: "#40B0F9",
                     label: "Android"
@@ -228,7 +215,7 @@
                 });
 
                 var kotlinDonut = new Chart(kotlinCtx).Doughnut([{
-                    value: 90,
+                    value: 100,
                     color: "#FF9421",
                     highlight: "#FF9421",
                     label: "Android"
@@ -249,21 +236,6 @@
                     label: "Java/Java EE 7"
                 }, {
                     value: 10,
-                    color: "#F7F7F3"
-                }], {
-                    segmentShowStroke: false,
-                    animateScale: true,
-                    showTooltips: false,
-                    responsive: true
-                });
-
-                var javaScriptDonut = new Chart(javaScriptCtx).Doughnut([{
-                    value: 75,
-                    color: "#40B0F9",
-                    highlight: "#40B0F9",
-                    label: "JavaScript"
-                }, {
-                    value: 15,
                     color: "#F7F7F3"
                 }], {
                     segmentShowStroke: false,
